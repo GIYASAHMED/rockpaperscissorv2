@@ -1,0 +1,119 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(11, 40, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    width: 800px;
+    max-width: 500px;
+    background-color: rgba(68, 93, 217, 0.565);
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(68, 93, 217, 0.565);
+    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace;
+}
+h2{
+    margin-bottom: 10px;
+}
+.head span{
+    color: rgb(81, 238, 33);
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btn{
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+}
+.btn:nth-child(1){
+    background-color: rgb(215, 137, 54);
+}
+.btn:nth-child(2){
+    background-color: rgb(239, 235, 230);
+}
+.btn:nth-child(3){
+    background-color: rgb(178, 222, 115);;
+}
+
+.scores{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.score{
+    padding: 10px;
+    border-radius: 5px;
+}
+.score span{
+    font-size: 25px;
+    color: #000;
+}
+.score:nth-child(1){
+    background-color: #6dd5ed;
+}
+.score:nth-child(2){
+    background-color: #ffb88c;
+}
+.score:nth-child(3){
+    background-color: #48b1bf;
+}
+.win{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: chartreuse;
+}
+#winner{
+    color: rgb(244, 204, 61);
+    font-size: 40px;
+}
+
+@media (max-width:440px){
+    .buttons{
+        flex-direction: column;
+        gap: 20px;
+        /* font-size: 40px; */
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gameContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gameContainer .head{
+        font-size: 1rem;
+    }
+    .score{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .score span{
+        font-size: 25px;
+        color: #000;
+    }
+}
